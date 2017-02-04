@@ -24,8 +24,9 @@ function navController(navService,$mdSidenav) {
 		var service = new google.maps.places.PlacesService(map);
   		service.nearbySearch({
     		location: myCenter,
-    		radius: 600,
+    		radius: '600',
     		type: [searchType]
+//    		keyword: searchType
   		}, callback);
 
 		function callback(results, status) {

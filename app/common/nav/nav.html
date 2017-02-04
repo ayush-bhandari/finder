@@ -2,7 +2,7 @@
 <md-button ng-click="vm.toggleSideNav()" class="md-fab md-accent" aria-label="toggleSideNav">
     <i class="zmdi zmdi-menu zmdi-hc-3x" style="margin-top: 7px;"></i>
 </md-button></div>
-<div layout="column" ng-cloak>
+<div id="sideNav" layout="column" ng-cloak>
 	<md-sidenav class="md-sidenav-left" md-component-id="left" md-whiteframe="8">
 	<md-toolbar>
 	<div class="font-effect-shadow-multiple" id="sidenavFinder">Finder</div>
@@ -21,6 +21,9 @@
 	  	</md-list-item>
 	  	<md-list-item>
 		<md-button class="md-raised md-primary" ng-click="vm.search('gym');vm.toggleSideNav()">Gym</md-button>
+	  	</md-list-item>
+	  	<md-list-item>
+		<md-button class="md-raised md-primary" ng-click="vm.search('Futsal Court');vm.toggleSideNav()">Futsal</md-button>
 	  	</md-list-item>
 	</md-list>
 	</section>
